@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.flex{
+    height:100vh !important;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-flow:column;
+    flex-flow:column;
+    padding:0 !important;
+    margin:0 !important;
+}
+.flex-page{
+    position:relative !important;
+    overflow:auto !important;
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    flex:1;
+    padding:0 !important;
+    margin:0 !important;
+}
+.flex-container{
+    position:absolute;
+    width:100%!important;
+    min-height:100%;
+}
+.flex-fixed{
+    position:static !important;
+    display:block;
+}
+.flex-page::-webkit-scrollbar{
+    width:0;
+}
+.flex-page::scrollbar{
+    width:0;
+}

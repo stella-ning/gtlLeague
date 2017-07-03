@@ -1,0 +1,589 @@
+@charset "UTF-8";
+@import 'var.less';
+/*---公共样式---*/
+body{
+    background: @color-pureWhite;
+}
+.wrap{
+    width:100%;
+}
+a:active,a:visited{
+    background: none;
+}
+/*---头部---*/
+header.wrap {
+    background:@color-red;
+    .head{
+        position:relative;
+        .logo{
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        .nav li{
+            a{
+                color:@color-white;
+            }
+        }
+    }
+}
+
+
+/*--轮播图--*/
+.swiper-container{
+    width:100%;
+    overflow:hidden;
+    .swiper-wrapper .swiper-slide a{
+        display:block;
+        width:100%;
+        height:100%;
+        img{
+            width:100%;
+            height:100%;
+            max-width:100%;
+        }
+    }
+}
+.pagination{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    text-align:center;
+    width:100%;
+    z-index:10;
+}
+.swiper-pagination-switch{
+    display:inline-block;
+    background:@color-gray;
+    border-radius:0;
+    transition: width .2s ease;
+    -moz-transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+    -o-transition: width .2s ease;
+
+
+}
+.swiper-active-switch{
+    background:@color-red;
+}
+
+.swiper-container:hover .swiper-button-prev{
+    background:url('../images/arrow-left.png') no-repeat;
+    background-size:cover;
+}
+
+.swiper-container:hover .swiper-button-next{
+    background:url('../images/arrow-right.png') no-repeat;
+    background-size:cover;
+}
+
+/*--八大服务体系--*/
+.services{
+    .container{
+        text-align:center;
+        padding:0;
+        .services-con{
+            width:100%;
+            color:@color-black;
+            .tips{
+                font-weight: bold;
+            }
+            .service-items{
+                li{
+                    float:left;
+                    width:25%;
+                    text-align:center;
+                    border-bottom: 1px solid @color-wGray;
+                    border-right:1px solid @color-wGray;
+                    span{
+                        display:block;
+                    }
+                    .item-icon{
+                        width:54%;
+                        height:52%;
+                        margin:12% auto;
+                        border-radius: 50%;
+                        background-color: @color-gray;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 45%;
+                    }
+                    .item-txt{
+                        font-size:@font-size18;
+                        font-weight: bold;
+                    }
+                    &:nth-child(4n){
+                        border-right:none;
+                    }
+
+                    &:nth-child(1){
+                        .item-icon{
+                            background-image: url(../images/service1.png);
+
+                        }
+
+                    }
+                    &:nth-child(2){
+                        .item-icon{
+                            background-image:url(../images/service2.png);
+
+                        }
+
+                    }
+                    &:nth-child(3){
+                        .item-icon{
+                            background-image:url(../images/service3.png);
+
+                        }
+
+                    }
+                    &:nth-child(4){
+                        .item-icon{
+                            background-image:url(../images/service4.png);
+
+                        }
+
+                    }
+                    &:nth-child(5){
+                        border-bottom:none;
+                        .item-icon{
+                            background-image:url(../images/service5.png);
+
+                        }
+
+                    }
+                    &:nth-child(6){
+                        border-bottom:none;
+                        .item-icon{
+                            background-image:url(../images/service6.png);
+
+                        }
+
+                    }
+                    &:nth-child(7){
+                        border-bottom:none;
+                        .item-icon{
+                            background-image:url(../images/service7.png);
+
+                        }
+
+                    }
+                    &:nth-child(8){
+                        border-bottom:none;
+                        .item-icon{
+                            background-image:url(../images/service8.png);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*--留言---*/
+.message{
+    .container{
+        .message-con{
+            .mes-table{
+                .form-group{
+                    text-align: center;
+                }
+                .has-error .form-control{
+                    border-color:@color-red;
+                }
+                .form-control{
+                    border:1px solid @color-wGray;
+
+                }
+                textarea{
+                    outline: none;
+                    border:1px solid @color-wGray;
+                    text-align: left;
+                    border-radius: 4px;
+                    display: block;
+                }
+                .error .valid_message{
+                    display:block;
+                    color:@color-red;
+                    text-align: center;
+                }
+                .valid_message{
+                    display:block;
+                    color:@color-red;
+                }
+                .btn{
+                    background: @color-red;
+                    color:@color-white;
+                    outline: none;
+                    margin:0 auto;
+                }
+            }
+        }
+    }
+}
+
+
+/*---------------分割线----------------*/
+/*--招商加盟页--*/
+.shop-ser{
+    background:#262626;
+    .container{
+        .contain-title{
+            p{
+                color:@color-pureWhite;
+                &::before,&::after{
+                    border-color: @color-pureWhite;
+                }
+            }
+
+        }
+
+        .services-con{
+            color:@color-pureWhite;
+            .service-items{
+                .item-txt{
+                    color:@color-pureWhite;
+                }
+            }
+        }
+    }
+}
+.shopShow{
+    #imageFlow {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        left: 0%;
+        top: 25%;
+        z-index:3;
+        overflow:hidden !important;
+        .imagesBtn{
+            width:100%;
+            text-align:center;
+            position:absolute;
+            bottom:10%;
+            vertical-align: middle;
+            span.btnItem{
+                display:inline-block;
+                background: @color-wGray;
+                transition: width .2s ease;
+                &.active{
+                    background: @color-red;
+                }
+            }
+        }
+    }
+    #imageFlow .diapo {
+        position: absolute;
+        left: -1000px;
+        cursor: pointer;
+        -ms-interpolation-mode: nearest-neighbor;
+
+    }
+    #imageFlow .link {
+        border: dotted #fff 1px;
+        margin-left: -1px;
+        margin-bottom: -1px;
+    }
+    #imageFlow .bank {
+        visibility: hidden;
+    }
+
+    #imageFlow .arrow-left {
+        position: absolute;
+        left:0;
+        top:30%;
+    }
+    #imageFlow .arrow-right {
+        position: absolute;
+        right: 0px;
+        top:30%;
+    }
+}
+
+/*---------------分割线----------------*/
+/*--加盟问答--*/
+.QandA{
+    background:#eee;
+}
+
+
+/*--产品推荐--*/
+.produce-wrap{
+    background:url('../images/produce-bg.jpg') no-repeat center;
+    background-size:100% 100%;
+    position:relative;
+    mark{
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: rgba(0,0,0,.4);
+    }
+    .container{
+        text-align:center;
+        position:relative;
+        .produce-title{
+            position:relative;
+            z-index:2;
+            img{
+                vertical-align: middle;
+            }
+            a{
+                color:@color-gray;
+                position:absolute;
+                right:0;
+            }
+        }
+        #imageFlow {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            left: 0%;
+            top: 60%;
+            z-index:3;
+            overflow:hidden !important;
+            .imagesBtn{
+                width:100%;
+                text-align:center;
+                position:absolute;
+                bottom:10%;
+                vertical-align: middle;
+                span.btnItem{
+                    display:inline-block;
+                    background: @color-gray;
+                    transition: width .2s ease;
+                    &.active{
+                        background: @color-red;
+                    }
+                }
+            }
+        }
+        #imageFlow .diapo {
+            position: absolute;
+            left: -1000px;
+            cursor: pointer;
+            -ms-interpolation-mode: nearest-neighbor;
+
+        }
+        #imageFlow .link {
+            border: dotted #fff 1px;
+            margin-left: -1px;
+            margin-bottom: -1px;
+        }
+        #imageFlow .bank {
+            visibility: hidden;
+        }
+
+        #imageFlow .arrow-left {
+            position: absolute;
+            left:0;
+        }
+        #imageFlow .arrow-right {
+            position: absolute;
+            right: 0px;
+        }
+
+    }
+}
+
+/*-- 公司活动 行业资讯--*/
+.infomation{
+    .container{
+        .act-title{
+            position:relative;
+            .more{
+                color:@color-gray;
+                position:absolute;
+            }
+        }
+        .com-act{
+            .active-show{
+                .active-list{
+                    position:relative;
+                    float:left;
+                    a{
+                        display:block;
+                        width:100%;
+                        height:100%;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                    .active-state{
+                        display:block;
+                        width:100%;
+                        //height:0px;
+                        transition: height .3s ease;
+                        background:rgba(0,0,0,.5);
+                        position:absolute;
+                        left:0;
+                        bottom:0;
+                        cursor: pointer;
+                        p,time{
+                            width:100%;
+                            line-height:15px;
+                            font-size: @font-size12;
+                            color:@color-white;
+                            margin:0;
+                            padding:5px 15px 0 ;
+                        }
+                    }
+                    &:hover .active-state{
+                        //height:40px;
+                    }
+
+                }
+            }
+        }
+        .industries{
+            //width:34%;
+            .industries-list{
+                width:100%;
+                //height:220px;
+                background:@backgroung-color;
+                padding:3px;
+                figure{
+                    line-height:27px;
+                    background:#ffffff;
+                    padding:0 20px;
+                    box-sizing: border-box;
+                    transition: padding .2s ease;
+                    &:last-child{
+                        line-height:26px;
+                    }
+                    a{
+                        font-size:@font-size12;
+                        color:@color-black;
+                    }
+                    figcaption{
+                        width:73%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space:nowrap;
+                    }
+                    time{
+
+                        width:25%;
+                    }
+                    &:hover{
+                        padding-left:30px;
+
+                    }
+                    &:hover a{
+                        color:@color-gray;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+
+/*----分割线----*/
+
+/*---分割线--*/
+/*--新闻详情--*/
+/*--分享样式--*/
+.share{
+    width:100%;
+    margin:30px 0;
+    .bdsharebuttonbox{
+        .bds_more{
+            background-image:url(../images/share-icon.png);
+            float:left;
+            padding-left:27px;
+            height:20px;
+            line-height:20px;
+            margin-top:10px;
+            margin-right:15px;
+        }
+        .share-icon{
+            cursor: pointer;
+            display:inline-block;
+            width:50px;
+            text-align:center;
+            a{
+                display:block;
+                float:none;
+                margin:0;
+                margin-left:15px;
+
+            }
+            i{
+                display:block;
+                font-size:@font-size12;
+                color:#666;
+            }
+        }
+    }
+}
+
+/*----分割线----*/
+/*--加入光头佬页--*/
+#JoinUs{
+    text-align:center;
+    .join-con{
+        .small-title{
+            color:@color-white;
+            background: @color-red;
+            margin:0 auto;
+        }
+        .has-error .form-control{
+            border-color:@color-red;
+        }
+        .form-control{
+            border: 1px solid @color-gray;
+        }
+        textarea{
+            outline: none;
+            border: 1px solid @color-gray;
+            text-align: left;
+            border-radius: 4px;
+            display: block;
+        }
+        .error .valid_message{
+            color:@color-red;
+        }
+        .valid_message{
+            color:@color-red;
+        }
+        .btn{
+            background: @color-red;
+            color:@color-white;
+            outline: none;
+        }
+
+    }
+}
+
+
+/*--改变select选择框的默认样式---*/
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px @color-gray;
+
+  /*很关键：将默认的select选择框样式清除*/
+  // appearance:none;
+  // -moz-appearance:none;
+  // -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+    background-image: url("../images/select-arrow.png") no-repeat right center;
+  background-color:@color-white;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+//select::-ms-expand { display: none; }

@@ -1,0 +1,478 @@
+@charset "UTF-8";
+/*---公共样式---*/
+body {
+  background: #ffffff;
+}
+.wrap {
+  width: 100%;
+}
+a:active,
+a:visited {
+  background: none;
+}
+/*---头部---*/
+header.wrap {
+  background: #cc1400;
+}
+header.wrap .head {
+  position: relative;
+}
+header.wrap .head .logo img {
+  width: 100%;
+  height: 100%;
+}
+header.wrap .head .nav li a {
+  color: #fcf5eb;
+}
+/*--轮播图--*/
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  background: #f6f6f6;
+  border-radius: 0;
+  transition: width .2s ease;
+  -moz-transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+  -o-transition: width .2s ease;
+}
+.swiper-active-switch {
+  background: #cc1400;
+}
+.swiper-container:hover .swiper-button-prev {
+  background: url('../images/arrow-left.png') no-repeat;
+  background-size: cover;
+}
+.swiper-container:hover .swiper-button-next {
+  background: url('../images/arrow-right.png') no-repeat;
+  background-size: cover;
+}
+/*--八大服务体系--*/
+.services .container {
+  text-align: center;
+  padding: 0;
+}
+.services .container .services-con {
+  width: 100%;
+  color: #000000;
+}
+.services .container .services-con .tips {
+  font-weight: bold;
+}
+.services .container .services-con .service-items li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  border-bottom: 1px solid #b0b0b0;
+  border-right: 1px solid #b0b0b0;
+}
+.services .container .services-con .service-items li span {
+  display: block;
+}
+.services .container .services-con .service-items li .item-icon {
+  width: 54%;
+  height: 52%;
+  margin: 12% auto;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+}
+.services .container .services-con .service-items li .item-txt {
+  font-size: 18px;
+  font-weight: bold;
+}
+.services .container .services-con .service-items li:nth-child(4n) {
+  border-right: none;
+}
+.services .container .services-con .service-items li:nth-child(1) .item-icon {
+  background-image: url(../images/service1.png);
+}
+.services .container .services-con .service-items li:nth-child(2) .item-icon {
+  background-image: url(../images/service2.png);
+}
+.services .container .services-con .service-items li:nth-child(3) .item-icon {
+  background-image: url(../images/service3.png);
+}
+.services .container .services-con .service-items li:nth-child(4) .item-icon {
+  background-image: url(../images/service4.png);
+}
+.services .container .services-con .service-items li:nth-child(5) {
+  border-bottom: none;
+}
+.services .container .services-con .service-items li:nth-child(5) .item-icon {
+  background-image: url(../images/service5.png);
+}
+.services .container .services-con .service-items li:nth-child(6) {
+  border-bottom: none;
+}
+.services .container .services-con .service-items li:nth-child(6) .item-icon {
+  background-image: url(../images/service6.png);
+}
+.services .container .services-con .service-items li:nth-child(7) {
+  border-bottom: none;
+}
+.services .container .services-con .service-items li:nth-child(7) .item-icon {
+  background-image: url(../images/service7.png);
+}
+.services .container .services-con .service-items li:nth-child(8) {
+  border-bottom: none;
+}
+.services .container .services-con .service-items li:nth-child(8) .item-icon {
+  background-image: url(../images/service8.png);
+}
+/*--留言---*/
+.message .container .message-con .mes-table .form-group {
+  text-align: center;
+}
+.message .container .message-con .mes-table .has-error .form-control {
+  border-color: #cc1400;
+}
+.message .container .message-con .mes-table .form-control {
+  border: 1px solid #b0b0b0;
+}
+.message .container .message-con .mes-table textarea {
+  outline: none;
+  border: 1px solid #b0b0b0;
+  text-align: left;
+  border-radius: 4px;
+  display: block;
+}
+.message .container .message-con .mes-table .error .valid_message {
+  display: block;
+  color: #cc1400;
+  text-align: center;
+}
+.message .container .message-con .mes-table .valid_message {
+  display: block;
+  color: #cc1400;
+}
+.message .container .message-con .mes-table .btn {
+  background: #cc1400;
+  color: #fcf5eb;
+  outline: none;
+  margin: 0 auto;
+}
+/*---------------分割线----------------*/
+/*--招商加盟页--*/
+.shop-ser {
+  background: #262626;
+}
+.shop-ser .container .contain-title p {
+  color: #ffffff;
+}
+.shop-ser .container .contain-title p::before,
+.shop-ser .container .contain-title p::after {
+  border-color: #ffffff;
+}
+.shop-ser .container .services-con {
+  color: #ffffff;
+}
+.shop-ser .container .services-con .service-items .item-txt {
+  color: #ffffff;
+}
+.shopShow #imageFlow {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  left: 0%;
+  top: 25%;
+  z-index: 3;
+  overflow: hidden !important;
+}
+.shopShow #imageFlow .imagesBtn {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  vertical-align: middle;
+}
+.shopShow #imageFlow .imagesBtn span.btnItem {
+  display: inline-block;
+  background: #b0b0b0;
+  transition: width .2s ease;
+}
+.shopShow #imageFlow .imagesBtn span.btnItem.active {
+  background: #cc1400;
+}
+.shopShow #imageFlow .diapo {
+  position: absolute;
+  left: -1000px;
+  cursor: pointer;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+.shopShow #imageFlow .link {
+  border: dotted #fff 1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.shopShow #imageFlow .bank {
+  visibility: hidden;
+}
+.shopShow #imageFlow .arrow-left {
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+.shopShow #imageFlow .arrow-right {
+  position: absolute;
+  right: 0px;
+  top: 30%;
+}
+/*---------------分割线----------------*/
+/*--加盟问答--*/
+.QandA {
+  background: #eee;
+}
+/*--产品推荐--*/
+.produce-wrap {
+  background: url('../images/produce-bg.jpg') no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.produce-wrap mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+.produce-wrap .container {
+  text-align: center;
+  position: relative;
+}
+.produce-wrap .container .produce-title {
+  position: relative;
+  z-index: 2;
+}
+.produce-wrap .container .produce-title img {
+  vertical-align: middle;
+}
+.produce-wrap .container .produce-title a {
+  color: #f6f6f6;
+  position: absolute;
+  right: 0;
+}
+.produce-wrap .container #imageFlow {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  left: 0%;
+  top: 60%;
+  z-index: 3;
+  overflow: hidden !important;
+}
+.produce-wrap .container #imageFlow .imagesBtn {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  vertical-align: middle;
+}
+.produce-wrap .container #imageFlow .imagesBtn span.btnItem {
+  display: inline-block;
+  background: #f6f6f6;
+  transition: width .2s ease;
+}
+.produce-wrap .container #imageFlow .imagesBtn span.btnItem.active {
+  background: #cc1400;
+}
+.produce-wrap .container #imageFlow .diapo {
+  position: absolute;
+  left: -1000px;
+  cursor: pointer;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+.produce-wrap .container #imageFlow .link {
+  border: dotted #fff 1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.produce-wrap .container #imageFlow .bank {
+  visibility: hidden;
+}
+.produce-wrap .container #imageFlow .arrow-left {
+  position: absolute;
+  left: 0;
+}
+.produce-wrap .container #imageFlow .arrow-right {
+  position: absolute;
+  right: 0px;
+}
+/*-- 公司活动 行业资讯--*/
+.infomation .container .act-title {
+  position: relative;
+}
+.infomation .container .act-title .more {
+  color: #f6f6f6;
+  position: absolute;
+}
+.infomation .container .com-act .active-show .active-list {
+  position: relative;
+  float: left;
+}
+.infomation .container .com-act .active-show .active-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.infomation .container .com-act .active-show .active-list a img {
+  width: 100%;
+  height: 100%;
+}
+.infomation .container .com-act .active-show .active-list .active-state {
+  display: block;
+  width: 100%;
+  transition: height .3s ease;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.infomation .container .com-act .active-show .active-list .active-state p,
+.infomation .container .com-act .active-show .active-list .active-state time {
+  width: 100%;
+  line-height: 15px;
+  font-size: 12px;
+  color: #fcf5eb;
+  margin: 0;
+  padding: 5px 15px 0 ;
+}
+.infomation .container .industries .industries-list {
+  width: 100%;
+  background: #fcf5eb;
+  padding: 3px;
+}
+.infomation .container .industries .industries-list figure {
+  line-height: 27px;
+  background: #ffffff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: padding .2s ease;
+}
+.infomation .container .industries .industries-list figure:last-child {
+  line-height: 26px;
+}
+.infomation .container .industries .industries-list figure a {
+  font-size: 12px;
+  color: #000000;
+}
+.infomation .container .industries .industries-list figure figcaption {
+  width: 73%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.infomation .container .industries .industries-list figure time {
+  width: 25%;
+}
+.infomation .container .industries .industries-list figure:hover {
+  padding-left: 30px;
+}
+.infomation .container .industries .industries-list figure:hover a {
+  color: #f6f6f6;
+}
+/*----分割线----*/
+/*---分割线--*/
+/*--新闻详情--*/
+/*--分享样式--*/
+.share {
+  width: 100%;
+  margin: 30px 0;
+}
+.share .bdsharebuttonbox .bds_more {
+  background-image: url(../images/share-icon.png);
+  float: left;
+  padding-left: 27px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.share .bdsharebuttonbox .share-icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+.share .bdsharebuttonbox .share-icon a {
+  display: block;
+  float: none;
+  margin: 0;
+  margin-left: 15px;
+}
+.share .bdsharebuttonbox .share-icon i {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+/*----分割线----*/
+/*--加入光头佬页--*/
+#JoinUs {
+  text-align: center;
+}
+#JoinUs .join-con .small-title {
+  color: #fcf5eb;
+  background: #cc1400;
+  margin: 0 auto;
+}
+#JoinUs .join-con .has-error .form-control {
+  border-color: #cc1400;
+}
+#JoinUs .join-con .form-control {
+  border: 1px solid #f6f6f6;
+}
+#JoinUs .join-con textarea {
+  outline: none;
+  border: 1px solid #f6f6f6;
+  text-align: left;
+  border-radius: 4px;
+  display: block;
+}
+#JoinUs .join-con .error .valid_message {
+  color: #cc1400;
+}
+#JoinUs .join-con .valid_message {
+  color: #cc1400;
+}
+#JoinUs .join-con .btn {
+  background: #cc1400;
+  color: #fcf5eb;
+  outline: none;
+}
+/*--改变select选择框的默认样式---*/
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #f6f6f6;
+  /*很关键：将默认的select选择框样式清除*/
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background-image: url("../images/select-arrow.png") no-repeat right center;
+  background-color: #fcf5eb;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/

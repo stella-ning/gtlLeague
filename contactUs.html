@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="Author" content="Calvin,stella-ning">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="msapplication-tap-highlight" content="no" />
+	<title>加盟首页</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" media="only screen and (min-width:980px) and (max-width:1960px)" href="css/pc.css">
+	<link rel="stylesheet" media="only screen and (min-width:320px) and (max-width:780px)" href="css/mobile.css">
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/rem.js"></script>
+	<script src="js/idangerous.swiper2.7.6.min.js"></script>
+	<script src="js/index.js"></script>
+
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header class="wrap">
+		<div class="head container clearfix">
+			<div class="logo fl">
+				<a href=""><img src="images/headlogo.png" alt="" ></a>
+			</div>
+            <div class="tel-box fl">
+                <p>免费全国加盟热线 400-800-8807</p>
+            </div>
+            <div class="openNav fr" id="openNav">
+                <img src="images/nav-icon.png" alt="">
+            </div>
+			<ul class="nav fl" id="nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="league.html">招商加盟</a></li>
+				<li><a href="shopShow.html">店铺展示</a></li>
+				<li><a href="QandA.html">加盟问答</a></li>
+				<li class="hover"><a href="contactUs.html">联系我们</a></li>
+				<li><a href="http://guangtoulao.gtljm.com/">光头佬官网</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<!-- 轮播图 -->
+    <section class="container banner-wrap">
+        <div class="swiper-container" id="banner">
+    	    <div class="swiper-wrapper">
+    	        <div class="swiper-slide">
+    	            <a href="#">
+    					<img src="images/Hobanner01.jpg" alt="">
+    				</a>
+    	        </div>
+    	        <div class="swiper-slide">
+    				<a href="#">
+    					<img src="images/Hobanner02.jpg" alt="">
+    				</a>
+    			</div>
+    	        <div class="swiper-slide">
+    				<a href="#">
+    					<img src="images/Hobanner01.jpg" alt="">
+    				</a>
+    			</div>
+    	    </div>
+
+            <div class="pagination">
+    	        <span class="swiper-pagination-switch swiper-pagination-switch-active"></span>
+    	        <span class="swiper-pagination-switch"></span>
+    	        <span class="swiper-pagination-switch"></span>
+    	    </div>
+
+    		<div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
+    	</div>
+    </section>
+
+    <!-- 联系我们-->
+    <section class="wrap contactUs">
+        <div class="container clearfix">
+            <div class="con-right">
+                <p class="company-info">光头佬总部联系方式</p>
+                <div class="info-wrap">
+                    <p class="info-item">
+                        总部官网：http://www.guangtoulao.com
+                    </p>
+                    <p class="info-item">
+                        加盟官网：http://www.gtljm.com
+                    </p>
+                    <p class="info-item">
+                        网上订购：http://www.guangtoulao.shop
+                    </p>
+                    <p class="info-item">
+                        公司：广州光头佬联圣贸易有限公司
+                    </p>
+                    <p class="info-item">
+                        地址：广州市番禺区大石街植村工业四路15号之四
+                    </p>
+                    <p class="info-item">
+                        全国免费加盟热线：400-800-8807
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="con-left">
+                <div id="wrap" class="my-map">
+            		<div id="mapContainer"></div>
+            	</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 底部 -->
+    <footer class="wrap footer">
+        <div class="container clearfix">
+            <div class="foot-logo fl">
+                <a href="">
+                    <img src="images/footer-logo.png" alt="">
+                </a>
+            </div>
+            <div class="foot-con fr">
+                <div class="foot-nav">
+                    <a href="">
+                        首页
+                    </a>
+                    <a href="">
+                        关于我们
+                    </a>
+                    <a href="">
+                        特色点心
+                    </a>
+                    <a href="">
+                        公司活动
+                    </a>
+                    <a href="">
+                        行业资讯
+                    </a>
+                    <a href="">
+                        加入我们
+                    </a>
+                </div>
+                <div class="join-tel">
+                    <a href="">
+                        <img src="images/tel.png" alt="">
+                    </a>
+                </div>
+                <div class="con-info">
+                    <p>&copy;2015 版权所有 广州光头佬联圣贸易有限公司</p>
+                    <p>粤ICP备17003572号-2</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 高德地图 -->
+    <script src="http://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+    <script>
+    	!function(){
+    		var infoWindow, map, level = 15,
+    			center = {lng: 113.335423, lat: 23.011372},
+    			features = [{type: "Marker", name: "光头佬联圣公司", desc: "地址：广州市番禺区大石街植村工业四路15号之四 官网：www.guangtoulao.com", color: "red", icon: "cir", offset: {x: -9, y: -31}, lnglat: {lng: 113.3295, lat: 23.009111}}];
+
+    		function loadFeatures(){
+    			for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
+    				data = features[i];
+    				switch(data.type){
+    					case "Marker":
+    						feature = new AMap.Marker({ map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+    							zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+    							content: '<div class="icon icon-' + data.icon + ' icon-'+ data.icon +'-' + data.color +'"></div>' });
+    						break;
+    					case "Polyline":
+    						for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+    							path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+    						}
+    						feature = new AMap.Polyline({ map: map, path: path, extData: data, zIndex: 2,
+    							strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity });
+    						break;
+    					case "Polygon":
+    						for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+    							path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+    						}
+    						feature = new AMap.Polygon({ map: map, path: path, extData: data, zIndex: 1,
+    							strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+    							fillColor: data.fillColor, fillOpacity: data.fillOpacity });
+    						break;
+    					default: feature = null;
+    				}
+    				if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
+    			}
+    		}
+
+    		function mapFeatureClick(e){
+    			if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
+    			var extData = e.target.getExtData();
+    			infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+    			infoWindow.open(map, e.lnglat);
+    		}
+
+    		map = new AMap.Map("mapContainer", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+
+    		loadFeatures();
+
+    		map.on('complete', function(){
+    			map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function(){
+    				map.addControl(new AMap.ToolBar);
+    			map.addControl(new AMap.OverView({isOpen: true}));
+    			map.addControl(new AMap.Scale);
+    			});
+    		})
+
+    	}();
+	</script>
+    <script>
+        $(function(){
+            //轮播图
+            var swiper = new Swiper('#recommendShop', {
+                pagination: '#recommendShop .pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                loop:true
+            });
+            $('.swiper-button-prev').on('click',function(e){
+                e.preventDefault()
+                swiper.swipePrev()
+            });
+            $('.swiper-button-next').on('click',function(e){
+                e.preventDefault()
+                swiper.swipeNext()
+            });
+
+        })
+    </script>
+
+</body>
+</html>
